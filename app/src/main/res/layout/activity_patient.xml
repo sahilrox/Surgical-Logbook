@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/patientView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tabs.PatientView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/patientNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:textColorHint="@color/colorAccent"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNPQRSTUVWXYZ abcdefghijklmnpqrstuvxyz"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:maxLength="30"
+                android:hint="Full Name*:"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Age*:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/patientYearsLayout"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/ageText"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/patientYears"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Years"
+                    android:inputType="textPersonName"
+                    android:maxLength="2"
+                    android:textSize="15sp"
+                    android:layout_width="70dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/patientMonthsLayout"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/patientYearsLayout"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/patientMonths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Months"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/patientDaysLayout"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/patientMonthsLayout"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/sexText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Sex*:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+
+            <RadioGroup
+                android:id="@+id/sexradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sexText"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/buttonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Male"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/buttonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Female"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:textColorHint="@color/colorAccent"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hospitalRegNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Hospital Reg No:"
+                android:inputType="number"
+                android:maxLength="20"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

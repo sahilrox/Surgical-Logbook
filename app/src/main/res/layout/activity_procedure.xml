@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/procedureView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tabs.ProcedureView">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Procedure:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/procedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/procedureOtherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"
+            android:textColorHint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/procedureOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Specify:"
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/procedureNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/procedureName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Procedure Name*:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:maxLength="20"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:hint="Site:"
+                android:inputType="text"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/sideText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Side:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+
+            <RadioGroup
+                android:id="@+id/sideradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sideText"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/buttonLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Left"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/buttonRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Right"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Anaesthesia*:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/anaesthesia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/anaesthesiaOtherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:visibility="gone"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/anaesthesiaOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Specify:"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/preDiagnosisLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/preDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Pre-operative Diagnosis*:"
+                android:maxLines="6"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Post-operative Diagnosis:"
+                android:inputType="textMultiLine"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:maxLines="6"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/position1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Position:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/antiPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Antibiotic prophylaxis:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/incision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Incision:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/approach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Approach:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/findings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Intra-operative findings:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/additional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Additional Procedures:"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Details of Closure Technique:"
+                android:inputType="textMultiLine"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:textColorHint="@color/colorAccent"
+                android:maxLines="6"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/bloodLossText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Estimated blood loss:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/blood"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:layout_marginEnd="5dp"
+                android:maxLength="4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="ml"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Prosthesis/Implant used:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="100dp"
+                android:id="@+id/prosthesis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/prosYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/prosNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/prosthesisDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/prosthesisDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Prosthesis Details:"
+                android:inputType="textMultiLine"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Complications:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="100dp"
+                android:id="@+id/complications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/compYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16sp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/compNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/complicationsDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/complicationsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Complications Details:"
+                android:inputType="textMultiLine"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Any tissue removed or altered:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="100dp"
+                android:id="@+id/tissue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tissueYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16sp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/tissueNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tissueDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tissueDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Details:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Pressure Tubes:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="100dp"
+                android:id="@+id/tubes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tubesYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/tubesNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tubesDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tubesDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Pressure Tubes Details:"
+                android:inputType="textMultiLine"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Deep Vein Thrombosis:"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="100dp"
+                android:id="@+id/deepVein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/veinYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/veinNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/deepVeinDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/deepVeinDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Deep Vein Thrombosis Details:"
+                android:inputType="textMultiLine"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890,:;/"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

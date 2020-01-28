@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light">
+
+            <TextView
+                android:id="@+id/dateCard"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:text="Date"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/patientNameCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:text="Name: "
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/patientAgeCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Age: "
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/patientProcedureCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Procedure: "
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

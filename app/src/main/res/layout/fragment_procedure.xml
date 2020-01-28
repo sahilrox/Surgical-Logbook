@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Procedure"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewProcedure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Procedure Name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewProcedureName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/siteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Site"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewSite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sideLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Side"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewSide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anaesthesia"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewAnaesthesia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pre-operative Diagnosis"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewDiagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/postDiagnosisLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post-operative Diagnosis"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewPostDiagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/positionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewPosition1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/antibioticLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Antibiotic Phrophylaxis"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewAntibiotic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/incisionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incision"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewIncision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/approachLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Approach"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewApproach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intraLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intra-operative findings"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewIntra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/additionalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Procedures"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewAdditional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/closureLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details of Closure Technique"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewClosure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bloodLossLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated blood loss"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewBloodLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prosthesisLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prosthesis Used"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewProsthesis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/complicationsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complications"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewComplications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tissueLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tissue removied or altered"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewTissue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tubesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure Tubes"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deepLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deep Vein Thrombosis"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewDeep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/uploadImg"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:background="@drawable/button_rounded"
+                    android:textColor="@android:color/white"
+                    />
+
+                <Button
+                    android:id="@+id/viewImg"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Uploads"
+                    android:background="@drawable/button_rounded"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

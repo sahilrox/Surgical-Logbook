@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "520161382206",
+    "firebase_url": "https://surgical-logbook.firebaseio.com",
+    "project_id": "surgical-logbook",
+    "storage_bucket": "surgical-logbook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520161382206:android:5f4c0fb664b4767d",
+        "android_client_info": {
+          "package_name": "com.example.sahil.surgicallogbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520161382206-emcue3feaemp0s0rvpck1radhq9h6k7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sahil.surgicallogbook",
+            "certificate_hash": "3c3d9513d7c241dc7d4b1655325a8111634d683e"
+          }
+        },
+        {
+          "client_id": "520161382206-0jmfn1lsq58t6b0asbet29pfmar67j7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbOEfjXOeYiuOeuhDWEMbMgV6BoYyG-DU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520161382206-0jmfn1lsq58t6b0asbet29pfmar67j7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520161382206:android:04fda256bc8d3e320aa66f",
+        "android_client_info": {
+          "package_name": "com.example.surgicallogbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520161382206-7a6tdpgo9g7upk1gjns2okab0sfdd1kg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.surgicallogbook",
+            "certificate_hash": "d5629902cfd1c3400c40e7f2cc267ef0cdb9d4a0"
+          }
+        },
+        {
+          "client_id": "520161382206-0jmfn1lsq58t6b0asbet29pfmar67j7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbOEfjXOeYiuOeuhDWEMbMgV6BoYyG-DU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520161382206-0jmfn1lsq58t6b0asbet29pfmar67j7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

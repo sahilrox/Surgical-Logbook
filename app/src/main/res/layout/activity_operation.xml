@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/operationView"
+    android:layout_height="match_parent"
+    tools:context=".Tabs.OperationView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/operationDate"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Surgery Date*"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateText"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_date_picker" />
+
+
+            <EditText
+                android:id="@+id/operationDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/date_picker"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="sans-serif-light"
+                android:hint="Surgery Date"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dateInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/operationDateIn"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Date In*"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/date_picker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateInText"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_date_picker" />
+
+
+            <EditText
+                android:id="@+id/operationDateIn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/date_picker1"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Date In"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/timeInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/operationTimeIn"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Time In*"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeInText"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/operationDateIn"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_time" />
+
+
+            <EditText
+                android:id="@+id/operationTimeIn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/time_picker"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="sans-serif-light"
+                android:hint="Time In"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dateOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/operationDateOut"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Date Out"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/date_picker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateOutText"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_date_picker" />
+
+
+            <EditText
+                android:id="@+id/operationDateOut"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/date_picker2"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginEnd="40dp"
+                android:layout_alignBottom="@+id/dateOutText"
+                android:fontFamily="sans-serif-light"
+                android:hint="Date Out"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/timeOutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/operationTimeOut"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Time Out"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/time_picker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeOutText"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/operationDateOut"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_time" />
+
+
+            <EditText
+                android:id="@+id/operationTimeOut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/time_picker1"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="sans-serif-light"
+                android:hint="Time Out"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Position*:"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-light"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/surgeon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+            android:ems="10"
+            android:textColorHint="@color/colorAccent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

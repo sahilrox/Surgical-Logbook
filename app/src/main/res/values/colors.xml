@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18db12</color>
+    <color name="colorPrimaryDark">#FF23831C</color>
+    <color name="colorAccent">#FF1AC20F</color>
+    <color name="followers">#0EA006</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidRectangle">#80FFFFFF</color>
+    <color name="rectangleBorder">#30FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+</resources>

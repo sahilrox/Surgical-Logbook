@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".SignUpPage">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="10dp"
+            android:text="Profile Pic:"/>
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:outlineProvider="bounds"
+            android:src="@drawable/defaulticon"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name*:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="18dp"
+                android:text="Degrees*:"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="MBBS"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/checkBox1"
+                    android:layout_marginRight="5dp"
+                    android:text="MS"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignLeft="@id/checkBox7"
+                    android:layout_toRightOf="@+id/checkBox2"
+                    android:text="MD"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/checkBox3"
+                    android:layout_alignLeft="@id/checkBox8"
+
+                    android:text="MCh"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/checkBox1"
+                    android:text="DM"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/checkBox2"
+                    android:layout_alignLeft="@id/checkBox2"
+                    android:text="DNB"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/checkBox3"
+                    android:layout_toRightOf="@id/checkBox6"
+                    android:text="FRCS"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/checkBox4"
+                    android:layout_toRightOf="@id/checkBox7"
+                    android:text="FRACS"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/checkBox5"
+
+                    android:text="FCPS"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/checkBox5"
+                    android:layout_toRightOf="@id/checkBox9"
+                    android:layout_alignLeft="@id/checkBox2"
+                    android:text="Other"/>
+
+
+            </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/specify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Specify:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                android:ems="10"
+                android:visibility="gone"
+                android:inputType="text"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Country*:"
+                android:inputType="textAutoComplete"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State*:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                android:ems="10"
+                android:hint="City:"
+                android:inputType="textCapWords"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/regno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registration No."
+                android:ems="10"
+                android:digits="0123456789"
+                android:maxLength="20"
+                android:inputType="number"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Hospital:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                android:inputType="textCapWords"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginRight="15dp"
+                android:text="Designation*:"/>
+
+            <Spinner
+                android:id="@+id/designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:outlineAmbientShadowColor="@color/colorAccent"
+                android:focusableInTouchMode="true">
+
+            </Spinner>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:errorEnabled ="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email*:"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled ="true"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No.*:"
+            android:inputType="phone"
+            android:digits="0123456789+"
+            android:textSize="18sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            app:errorEnabled ="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password*:"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confpass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            app:errorEnabled ="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password*:"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/button_rounded"/>
+    </LinearLayout>
+</ScrollView>

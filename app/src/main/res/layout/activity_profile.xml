@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_border">
+
+            <ImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/rectangle"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/defaulticon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Email ID"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_edit_white_24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/logsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayout"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/followersBg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/logsTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Logs"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/followingBg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Operations"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logsLayout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registration No."
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textViewRegNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile No."
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textViewMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hospital"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textViewHospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textViewCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textViewState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textViewCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

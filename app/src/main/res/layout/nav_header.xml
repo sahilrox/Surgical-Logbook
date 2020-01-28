@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/nav_header_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/nav_profilePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/defaulticon"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/nav_profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/nav_profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+</LinearLayout>
